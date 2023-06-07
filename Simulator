@@ -67,7 +67,7 @@ def execute(inputs):
                 else:
                     regdic['111'] = 1
             elif opcodes2[a] == 'ld':
-                regdic[n[6:9]] = int([n[9:16]], 2)
+                regdic[n[6:9]] = int((n[9:16]), 2)
             elif opcodes2[a] == 'hlt':
                 check = 1
             print((bin(initialpc)[2:]).zfill(7), end="        ")
